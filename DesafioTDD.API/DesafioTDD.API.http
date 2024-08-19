@@ -1,0 +1,6 @@
+@DesafioTDD.API_HostAddress = http://localhost:5137
+
+GET {{DesafioTDD.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
