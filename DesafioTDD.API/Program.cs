@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IPurchaseRepository, PurchaseRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -66,3 +67,4 @@ app.MapGet("/starstore/history/{clientId}", async (Guid clientId, IPurchaseRepos
 });
 
 app.Run();
+public partial class Program { }
